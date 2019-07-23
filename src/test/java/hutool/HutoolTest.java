@@ -1,6 +1,7 @@
 package hutool;
 
 import cn.hutool.core.lang.Console;
+import cn.hutool.core.util.RuntimeUtil;
 
 /**
  * User: lanxinghua
@@ -9,6 +10,9 @@ import cn.hutool.core.lang.Console;
  */
 public class HutoolTest {
     public static void main(String[] args) {
-        Console.log("35235213451");
+        String str = RuntimeUtil.execForStr("curl", "http://www.baidu.com");
+        System.out.println(str);
     }
+
+
 }
