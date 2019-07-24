@@ -1,7 +1,10 @@
 package hutool;
 
 import cn.hutool.core.lang.Console;
+import cn.hutool.core.lang.Singleton;
 import cn.hutool.core.util.RuntimeUtil;
+import cn.hutool.core.util.ZipUtil;
+import cn.hutool.crypto.SecureUtil;
 
 /**
  * User: lanxinghua
@@ -10,8 +13,9 @@ import cn.hutool.core.util.RuntimeUtil;
  */
 public class HutoolTest {
     public static void main(String[] args) {
-        String str = RuntimeUtil.execForStr("curl", "http://www.baidu.com");
-        System.out.println(str);
+        String pwd = SecureUtil.md5("123456");
+        Console.log(pwd);
+
     }
 
 
