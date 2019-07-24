@@ -68,5 +68,11 @@
             <version>0.1.54</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jool-java-8</artifactId>
+            <version>0.9.13</version>
+        </dependency>
+
     </dependencies>
 </project>
